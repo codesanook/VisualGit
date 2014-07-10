@@ -3,4 +3,6 @@
 
 #include "target.h"
 
+#include <wx/app.h>
+
 #endif // PCH_H
