@@ -1,0 +1,19 @@
+Introductions
+=============
+
+VisualGit is a cross-platform GUI for Git written in C++ using wxWidgets.
+
+Installation from source distribution for *nix
+==============================================
+
+Requirement:
+
+    - wxWidgets 2.8.12
+
+Instructions:
+
+    $ ./configure
+    $ make
+    $ make install
+
+for advanced options, see INSTALL.

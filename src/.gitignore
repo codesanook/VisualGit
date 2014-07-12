@@ -1,3 +1,14 @@
 # Visual Studio Generated Files.
 /VisualGit.vcxproj.user
 /obj/
+
+# GNU Autotools Generated Files.
+/*.o
+/.deps/
+/Makefile
+/Makefile.in
+/config.h
+/config.h.in
+/config.h.in~
+/stamp-h1
+/visualgit
