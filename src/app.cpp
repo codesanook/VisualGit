@@ -30,6 +30,8 @@ bool App::OnInit()
 {
     if ( !wxApp::OnInit() )
         return false;
+    
+    wxInitAllImageHandlers();
 
     MainFrame *frame = new MainFrame(_("Visual Git"));
     frame->Show(true);
