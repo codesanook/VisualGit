@@ -15,6 +15,17 @@ App::~App()
 {
 }
 
+wxString App::GetIconFileName(const wxString& name, int width, int height)
+{
+    wxFileName filename = wxFileName::DirName(wxStandardPaths::Get().GetResourcesDir());
+
+    filename.AppendDir(wxT("icons"));
+    filename.AppendDir(wxString::Format(wxT("%dx%d"), width, height));
+    filename.SetFullName(name);
+
+    return filename.GetFullPath();
+}
+
 bool App::OnInit()
 {
     if ( !wxApp::OnInit() )

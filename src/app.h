@@ -7,6 +7,8 @@ public:
     App();
     virtual ~App();
 
+    static wxString GetIconFileName(const wxString& name, int width, int height);
+
     virtual bool OnInit();
 
 private:
