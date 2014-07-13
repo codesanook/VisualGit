@@ -6,6 +6,7 @@
 #include <wx/app.h>
 #include <wx/filename.h>
 #include <wx/frame.h>
+#include <wx/image.h>
 #include <wx/stdpaths.h>
 
 #endif // PCH_H
