@@ -21,5 +21,6 @@ if test "$wxWin" != 1; then
 fi
 
 AC_CONFIG_FILES([Makefile
+                 bin/Makefile
                  src/Makefile])
 AC_OUTPUT

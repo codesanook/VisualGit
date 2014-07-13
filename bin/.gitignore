@@ -2,3 +2,7 @@
 /VisualGit.exe
 /VisualGit.ilk
 /VisualGit.pdb
+
+# GNU Autotools Generated Files.
+/Makefile
+/Makefile.in
