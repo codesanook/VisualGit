@@ -8,6 +8,7 @@
 #include <wx/frame.h>
 #include <wx/image.h>
 #include <wx/menu.h>
+#include <wx/statusbr.h>
 #include <wx/stdpaths.h>
 
 #endif // PCH_H

@@ -27,6 +27,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
     icons.AddIcon(App::GetIconFileName(wxT("visualgit.png"), 48, 48), wxBITMAP_TYPE_PNG);
     SetIcons(icons);
 
+    InitStatusBar();
     InitMenuBar();
 }
 
@@ -50,4 +51,9 @@ void MainFrame::InitMenuBar()
     menuBar->Append(menus, _("Help"));
 
     SetMenuBar(menuBar);
+}
+
+void MainFrame::InitStatusBar()
+{
+    wxStatusBar *statusBar = CreateStatusBar();
 }

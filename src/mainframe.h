@@ -12,6 +12,7 @@ public:
 
 private:
     void InitMenuBar();
+    void InitStatusBar();
 
     DECLARE_EVENT_TABLE()
     DECLARE_DYNAMIC_CLASS_NO_COPY(MainFrame)
