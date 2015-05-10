@@ -1,6 +1,7 @@
 #include "pch.h"
 #include "mainframe.h"
 #include "app.h"
+#include "clonedialog.h"
 
 enum
 {
@@ -11,6 +12,7 @@ enum
 IMPLEMENT_DYNAMIC_CLASS(MainFrame, wxFrame)
 
 BEGIN_EVENT_TABLE(MainFrame, wxFrame)
+    EVT_MENU    (ID_GIT_CLONE,  MainFrame::OnCloneGitRepository)
 END_EVENT_TABLE()
 
 MainFrame::MainFrame()
@@ -82,4 +84,11 @@ void MainFrame::InitStatusBar()
 void MainFrame::InitToolBar()
 {
     wxToolBar *toolBar = CreateToolBar();
+}
+
+void MainFrame::OnCloneGitRepository(wxCommandEvent& WXUNUSED(event))
+{
+    CloneDialog cloneDialog(this);
+    if ( cloneDialog.ShowModal() != wxID_OK )
+        return;
 }

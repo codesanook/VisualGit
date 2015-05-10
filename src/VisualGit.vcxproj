@@ -83,12 +83,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="app.h" />
+    <ClInclude Include="clonedialog.h" />
     <ClInclude Include="mainframe.h" />
     <ClInclude Include="win32resources.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="target.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="clonedialog.cpp" />
     <ClCompile Include="mainframe.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

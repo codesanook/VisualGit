@@ -10,6 +10,8 @@ public:
               const wxSize& size = wxDefaultSize);
     virtual ~MainFrame();
 
+    void OnCloneGitRepository(wxCommandEvent& event);
+
 private:
     void InitMenuBar();
     void InitRepositoriesWindow();
