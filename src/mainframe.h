@@ -12,8 +12,16 @@ public:
 
 private:
     void InitMenuBar();
+    void InitRepositoriesWindow();
+    void InitRepositoryWindows();
+    void InitSplitter();
     void InitStatusBar();
     void InitToolBar();
+
+    wxSplitterWindow *m_splitter;
+    wxTreeCtrl *m_repositories;
+
+    wxPanel *m_emptyView;
 
     DECLARE_EVENT_TABLE()
     DECLARE_DYNAMIC_CLASS_NO_COPY(MainFrame)

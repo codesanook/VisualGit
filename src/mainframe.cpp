@@ -30,6 +30,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
     InitStatusBar();
     InitMenuBar();
     InitToolBar();
+    InitSplitter();
 }
 
 MainFrame::~MainFrame()
@@ -52,6 +53,25 @@ void MainFrame::InitMenuBar()
     menuBar->Append(menus, _("Help"));
 
     SetMenuBar(menuBar);
+}
+
+void MainFrame::InitRepositoriesWindow()
+{
+    m_repositories = new wxTreeCtrl(m_splitter);
+}
+
+void MainFrame::InitRepositoryWindows()
+{
+    m_emptyView = new wxPanel(m_splitter);
+}
+
+void MainFrame::InitSplitter()
+{
+    m_splitter = new wxSplitterWindow(this);
+    InitRepositoriesWindow();
+    InitRepositoryWindows();
+    m_splitter->SplitVertically(m_repositories, m_emptyView);
+    m_splitter->SetMinimumPaneSize(100);
 }
 
 void MainFrame::InitStatusBar()

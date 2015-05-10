@@ -8,8 +8,11 @@
 #include <wx/frame.h>
 #include <wx/image.h>
 #include <wx/menu.h>
+#include <wx/panel.h>
+#include <wx/splitter.h>
 #include <wx/statusbr.h>
 #include <wx/stdpaths.h>
 #include <wx/toolbar.h>
+#include <wx/treectrl.h>
 
 #endif // PCH_H
