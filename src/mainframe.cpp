@@ -29,6 +29,7 @@ MainFrame::MainFrame(const wxString& title, const wxPoint& pos, const wxSize& si
 
     InitStatusBar();
     InitMenuBar();
+    InitToolBar();
 }
 
 MainFrame::~MainFrame()
@@ -56,4 +57,9 @@ void MainFrame::InitMenuBar()
 void MainFrame::InitStatusBar()
 {
     wxStatusBar *statusBar = CreateStatusBar();
+}
+
+void MainFrame::InitToolBar()
+{
+    wxToolBar *toolBar = CreateToolBar();
 }

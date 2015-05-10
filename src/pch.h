@@ -10,5 +10,6 @@
 #include <wx/menu.h>
 #include <wx/statusbr.h>
 #include <wx/stdpaths.h>
+#include <wx/toolbar.h>
 
 #endif // PCH_H
